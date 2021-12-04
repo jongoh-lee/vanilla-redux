@@ -11,6 +11,9 @@ const toDos = createSlice({
   }
 });
 
+
+//export dispatch
 export const { add, remove } = toDos.actions;
 
+//createStore but we can watch this and chage slice to reducer
 export default configureStore({ reducer: toDos.reducer });
